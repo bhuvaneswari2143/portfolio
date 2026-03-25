@@ -191,7 +191,7 @@
         <h2 class="heading">Contact <span>Me!</span></h2>
         
         <form id="contact-form">
-        
+
         <div class="input-box">
         <input type="text" name="name" placeholder="Full Name" required>
         <input type="email" name="email" placeholder="Email Address" required>
@@ -207,34 +207,27 @@
         <button type="submit" class="btn">Send Message</button>
         
         </form>
-        </section>
 
-        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        document.getElementById("contact-form").addEventListener("submit", function(event){
 
-        <script>
-        (function(){
-        emailjs.init("Uredi674q8lYGWdF8");
-        })();
-        
-        document.getElementById("contact-form").addEventListener("submit", function(event) {
-        
         event.preventDefault();
         
         emailjs.sendForm(
         "service_gj4owt7",
         "template_itxdb07",
         this
-        )
+        ).then(function(){
         
-        .then(function() {
         alert("Message sent successfully!");
         document.getElementById("contact-form").reset();
-        }, function(error) {
+        
+        }, function(error){
+        
         alert("Failed to send message");
+        
         });
         
         });
-        </script>
         <!--contact section design-->
         <!--<section class="contact" id="contact">
             <h2 class="heading">Contact <span>Me!</span></h2>
