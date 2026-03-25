@@ -13,16 +13,25 @@
     --main-color:#0ef;
 }
 
-table td:first-child {
-    font-weight: bold;
-    font-size: 50px;
-    padding-right: 10px;
+table {
+    font-size: 20px; /* increase size */
+    border-spacing: 0 10px; /* space between rows */
 }
 
-table td:last-child {
- font-size: 50px;
+td {
+ padding: 6px 12px;
 }
 
+/* Left side (labels) */
+td:first-child {
+ color: #00e6ff;  /* blue like your button */
+ font-weight: bold;
+}
+
+  /* Right side (values) */
+td:last-child {
+ color: #ffffff;  /* white */
+}
 html{
     font-size:62.5%;
     overflow-x:hidden;
