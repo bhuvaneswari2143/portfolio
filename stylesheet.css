@@ -13,19 +13,12 @@
     --main-color:#0ef;
 }
 
-.row {
-  display: flex;
-  align-items: center;
-  margin: 8px 0;
+table td {
+    padding: 4px 10px;
 }
-
-.row span {
-  font-weight: bold;
-  margin-right: 5px;
-}
-
-.row p {
-  margin: 0;
+table td:first-child {
+    font-weight: bold;
+    width: 140px;
 }
 
 html{
