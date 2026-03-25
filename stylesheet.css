@@ -13,18 +13,23 @@
     --main-color:#0ef;
 }
 
-.info .row {
-  display: flex;
-  margin: 6px 0;
+.info {
+    max-width: 500px;
+    font-family: Arial, sans-serif;
 }
 
-.info span {
-  width: 150px;   /* controls alignment */
-  font-weight: bold;
+.row {
+    display: flex;
+    margin: 6px 0;
 }
 
-.info p {
-  margin: 0;
+.label {
+    width: 140px;
+    font-weight: bold;
+}
+
+.value {
+    flex: 1;
 }
 
 html{
