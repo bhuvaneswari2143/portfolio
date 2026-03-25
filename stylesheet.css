@@ -14,27 +14,23 @@
 }
 
 table {
-    font-size: 16px; /* reduced from 20px */
-    border-spacing: 0 8px;
+    font-size: 14px; /* smaller & clean */
+    border-spacing: 0 6px;
 }
 
 td {
- padding: 4px 10px;
+ padding: 3px 8px;
 }
 
 td:first-child {
  color: #00e6ff;
- font-weight: 600; /* slightly bold, not too heavy */
- width: 130px; /* keeps alignment clean */
+ font-weight: 500; /* reduce boldness */
+ width: 110px; /* reduce width */
 }
 
 td:last-child {
  color: #ffffff;
-}
-
-  /* Right side (values) */
-td:last-child {
- color: #ffffff;  /* white */
+ font-weight: 400;
 }
 html{
     font-size:62.5%;
