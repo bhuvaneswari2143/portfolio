@@ -13,12 +13,14 @@
     --main-color:#0ef;
 }
 
-table td {
-    padding: 4px 10px;
-}
 table td:first-child {
     font-weight: bold;
-    width: 140px;
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+table td:last-child {
+ font-size: 18px;
 }
 
 html{
