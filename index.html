@@ -208,26 +208,41 @@
         
         </form>
 
-        document.getElementById("contact-form").addEventListener("submit", function(event){
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
+        <script>
+        
+        // initialize EmailJS
+        (function(){
+        emailjs.init("Uredi674q8lYGWdF8");
+        })();
+        
+        // form submit
+        document.getElementById("contact-form").addEventListener("submit", function(event){
+        
         event.preventDefault();
         
         emailjs.sendForm(
         "service_gj4owt7",
         "template_itxdb07",
         this
-        ).then(function(){
+        )
+        
+        .then(function() {
         
         alert("Message sent successfully!");
         document.getElementById("contact-form").reset();
         
-        }, function(error){
+        }, function(error) {
         
         alert("Failed to send message");
+        console.log(error);
         
         });
         
         });
+
+        </script>
         <!--contact section design-->
         <!--<section class="contact" id="contact">
             <h2 class="heading">Contact <span>Me!</span></h2>
