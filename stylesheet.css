@@ -13,23 +13,19 @@
     --main-color:#0ef;
 }
 
-.info {
-    max-width: 500px;
-    font-family: Arial, sans-serif;
-}
-
 .row {
-    display: flex;
-    margin: 6px 0;
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
 }
 
-.label {
-    width: 140px;
-    font-weight: bold;
+.row span {
+  font-weight: bold;
+  margin-right: 5px;
 }
 
-.value {
-    flex: 1;
+.row p {
+  margin: 0;
 }
 
 html{
