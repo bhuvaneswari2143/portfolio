@@ -13,20 +13,28 @@
     --main-color:#0ef;
 }
 
-.my-info td {
-    font-size: 13px;
-    padding: 3px 6px;
+.info-table {
+  font-family: Arial, sans-serif;
+  border-spacing: 0 6px;
 }
 
-.my-info td:first-child {
- color: #00e6ff;
- font-weight: 500;
+.info-table td {
+  font-size: 13px !important;
+  padding: 2px 6px;
 }
 
-.my-info td:last-child {
- color: #ffffff;
+/* LEFT SIDE */
+.info-table td:first-child {
+  color: #00e6ff !important;
+  font-weight: 600;
+  width: 110px;
 }
 
+/* RIGHT SIDE */
+.info-table td:last-child {
+  color: #ffffff !important;
+  font-weight: 400;
+}
 html{
     font-size:62.5%;
     overflow-x:hidden;
