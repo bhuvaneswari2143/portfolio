@@ -13,25 +13,20 @@
     --main-color:#0ef;
 }
 
-table {
-    font-size: 14px; /* smaller & clean */
-    border-spacing: 0 6px;
+.my-info td {
+    font-size: 13px;
+    padding: 3px 6px;
 }
 
-td {
- padding: 3px 8px;
-}
-
-td:first-child {
+.my-info td:first-child {
  color: #00e6ff;
- font-weight: 500; /* reduce boldness */
- width: 110px; /* reduce width */
+ font-weight: 500;
 }
 
-td:last-child {
+.my-info td:last-child {
  color: #ffffff;
- font-weight: 400;
 }
+
 html{
     font-size:62.5%;
     overflow-x:hidden;
