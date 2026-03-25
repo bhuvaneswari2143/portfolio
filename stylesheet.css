@@ -14,18 +14,22 @@
 }
 
 table {
-    font-size: 10px; /* increase size */
-    border-spacing: 0 10px; /* space between rows */
+    font-size: 16px; /* reduced from 20px */
+    border-spacing: 0 8px;
 }
 
 td {
- padding: 6px 12px;
+ padding: 4px 10px;
 }
 
-/* Left side (labels) */
 td:first-child {
- color: #00e6ff;  /* blue like your button */
- font-weight: bold;
+ color: #00e6ff;
+ font-weight: 600; /* slightly bold, not too heavy */
+ width: 130px; /* keeps alignment clean */
+}
+
+td:last-child {
+ color: #ffffff;
 }
 
   /* Right side (values) */
